@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(135deg, rgb(121, 121, 121),rgb(68, 68, 68)),linear-gradient(45deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(201, 111, 187) 28%, rgb(201, 111, 187) 100%),linear-gradient(135deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(201, 111, 187) 28%, rgb(201, 111, 187) 100%); background-blend-mode:overlay,overlay,normal;
+}
+h1{
+    text-align: center;
+    color: azure;
+    font-size: 3em;
+    font-family: Colonna MT;
+}
+h3{
+    text-align: center;
+    color: azure;
+    font-family: broadway;
+}
+.data{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.data div{
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Old English Text MT';
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

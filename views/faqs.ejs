@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(135deg, rgb(121, 121, 121),rgb(68, 68, 68)),linear-gradient(45deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(201, 111, 187) 28%, rgb(201, 111, 187) 100%),linear-gradient(135deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(201, 111, 187) 28%, rgb(201, 111, 187) 100%); background-blend-mode:overlay,overlay,normal;
+        }
+        h1{
+            text-align: center;
+            color: azure;
+            font-size: 3em;
+            font-family: Colonna MT;
+        }
+        h3{
+            text-align: center;
+            color: azure;
+            font-family: broadway;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .q{
+            /* width: 100%; */
+            margin: 15px;
+            border-radius: 15px;
+            padding: 5px;
+            /* border: 2px inset gray; */
+            /* background-color: #8400ff; */
+            box-shadow: 8px 8px 10px 10px rgb(34, 34, 34);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            FRUITS.Ai
+        </h1>
+        <h3>
+            "Be Healthy!"
+        </h3>
+    </header>
+    <div class="container">
+        <%fques.forEach((qna)=>{%>
+            <div class="q">
+                <div class="ques">
+                    <h4><%=qna.question%></h4s>
+                </div>
+                <div class="ans">
+                    <%=qna.answer%>
+                </div>
+            </div>
+        <%})%>
+    </div>
+    <div class="inpt">
+        <form action="/addfaq" method="post">
+            <input type="text" name="ques" placeholder="Any other question">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
